@@ -1,0 +1,23 @@
+[user]
+	name = Shutong Li
+	email = 285547719@qq.com
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[diff]
+	tool = vsdiffmerge
+[difftool]
+	prompt = true
+[difftool "vsdiffmerge"]
+	cmd = \"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer\\vsdiffmerge.exe\" \"$LOCAL\" \"$REMOTE\" //t
+	keepBackup = false
+[credential "http://10.10.1.44"]
+	provider = generic
+[credential "http://pdm-file.hsglaser.com:81"]
+	provider = generic
+[http]
+	sslVerify = false
+[credential "https://10.10.1.44:8443"]
+	provider = generic
